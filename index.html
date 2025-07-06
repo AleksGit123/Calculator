@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link rel="shortcut icon" href="images/calculator.svg" type="image/x-icon">
+    <title>Tip calculator</title>
+</head>
+
+<body>
+
+    <main class="main_container">
+
+        <!-- section for calculation -->
+        <section class="calc_section">
+
+            <div class="input_div">
+                <h2 class="bill font">Bill</h2>
+                <input type="number" inputmode="numeric" name="bill" id="bill_amount" class="input font" placeholder="0"
+                    min="0">
+                <div class="dollar_div">
+                    <img src="images/dollar.svg" alt="dollar icon" class="dollar_icon">
+                </div>
+            </div>
+
+
+            <div class="tip_div">
+                <h2 class="select_tip font">
+                    Select Tip%
+                </h2>
+                <div class="choose_tip">
+                    <!-- button1 -->
+                    <button class="font">
+                        5%
+                    </button>
+
+                    <!-- button2 -->
+                    <button class="font">
+                        10%
+                    </button>
+
+                    <!-- button3 -->
+                    <button class="font">
+                        15%
+                    </button>
+
+                    <!-- button4 -->
+                    <button class="font">
+                        25%
+                    </button>
+
+                    <!-- button5 -->
+                    <button class="font">
+                        50%
+                    </button>
+
+                    <!-- input -->
+                    <input type="number" placeholder="Custom" name="custom_tip" id="custom_tip" class="font">
+                </div>
+            </div>
+
+            <div class="number_of_people_div">
+                <h2 class="num_of_people font">
+                    Number of People
+                </h2>
+
+                <input type="number" placeholder="0" name="number_of_people" id="number_of_people" class="font input">
+                <div class="user_icon_div">
+                    <img src="images/user.svg" alt="user icon" class="user_icon">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section for summary -->
+        <section class="summary_section">
+
+            <div class="summary_div">
+
+                <div class="total_tip_div">
+                    <h2 class="tip_sum font">
+                        Tip Amount
+                        <span class="person font">/ person</span>
+                    </h2>
+                    <h3 class="total_tip total font">$0.00</h3>
+                </div>
+
+
+                <div class="total_tip_div">
+                    <h2 class="tip_sum font">
+                        Total Amount
+                        <span class="person font">/ person</span>
+                    </h2>
+                    <h3 class="total_tip total font">$0.00</h3>
+                </div>
+
+            </div>
+            <button class="reset_btn font">Reset</button>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

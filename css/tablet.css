@@ -1,0 +1,45 @@
+@media(max-width:800px) {
+    .main_container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .calc_section {
+        width: 100%;
+    }
+
+    #bill_amount {
+        font-size: 23px;
+    }
+
+    .choose_tip>button {
+        font-size: 16px;
+        padding-inline: 5px;
+    }
+
+    .tip {
+        font-size: 17px;
+    }
+
+    #number_of_people {
+        font-size: 23px;
+    }
+
+    .user_icon_div {
+        top: 28px;
+    }
+
+    .tip_sum {
+        font-size: 16px;
+    }
+
+    .total_tip {
+        font-size: 23px;
+    }
+
+    .reset_btn {
+        padding-inline: 10px;
+        font-size: 18px;
+    }
+
+}

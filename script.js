@@ -60,9 +60,10 @@ numOfPeople.addEventListener("input",()=>{
         // console.log("Total Tip Amount: ",totalTipAmount);
         // console.log("Tip For Person: " + tipForPerson.toFixed(2));
         // console.log("Total Bill Per Person: " + totalBillPerPerson.toFixed(2));
+
         tipPerPerson.innerHTML = "$" + tipForPerson.toFixed(2);
         totalTip.innerHTML = "$" + totalBillPerPerson.toFixed(2);
- console.log("Total Bill Per Person: " + totalBillPerPerson.toFixed(2));
+
     }
 })
 

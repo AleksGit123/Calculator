@@ -17,6 +17,10 @@
         padding-inline: 5px;
     }
 
+    .choose_tip>input {
+        padding-inline: 10px;
+    }
+
     .tip {
         font-size: 17px;
     }

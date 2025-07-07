@@ -15,7 +15,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/mobile.css">
 
     <link rel="shortcut icon" href="images/calculator.svg" type="image/x-icon">
     <title>Tip calculator</title>
@@ -31,7 +30,7 @@
             <div class="input_div">
                 <h2 class="bill font">Bill</h2>
                 <input type="number" inputmode="numeric" name="bill" id="bill_amount" class="input font" placeholder="0"
-                    min="0">
+                    min="1" required>
                 <div class="dollar_div">
                     <img src="images/dollar.svg" alt="dollar icon" class="dollar_icon">
                 </div>
@@ -44,41 +43,44 @@
                 </h2>
                 <div class="choose_tip">
                     <!-- button1 -->
-                    <button class="font">
+                    <button class="percents font">
                         5%
                     </button>
 
                     <!-- button2 -->
-                    <button class="font">
+                    <button class="percents font">
                         10%
                     </button>
 
                     <!-- button3 -->
-                    <button class="font">
+                    <button class="percents font">
                         15%
                     </button>
 
                     <!-- button4 -->
-                    <button class="font">
+                    <button class="percents font">
                         25%
                     </button>
 
                     <!-- button5 -->
-                    <button class="font">
+                    <button class="percents font">
                         50%
                     </button>
 
                     <!-- input -->
                     <input type="number" placeholder="Custom" name="custom_tip" id="custom_tip" class="font">
+
                 </div>
             </div>
 
+            <!-- div for number of people -->
             <div class="number_of_people_div">
                 <h2 class="num_of_people font">
                     Number of People
                 </h2>
 
-                <input type="number" placeholder="0" name="number_of_people" id="number_of_people" class="font input">
+                <input type="number" placeholder="0" name="number_of_people" id="number_of_people" class="font input"
+                    min="1" required>
                 <div class="user_icon_div">
                     <img src="images/user.svg" alt="user icon" class="user_icon">
                 </div>
@@ -96,7 +98,7 @@
                         Tip Amount
                         <span class="person font">/ person</span>
                     </h2>
-                    <h3 class="total_tip total font">$0.00</h3>
+                    <h3 class="tip_per_person total font">$0.00</h3>
                 </div>
 
 
